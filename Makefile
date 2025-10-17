@@ -1,10 +1,11 @@
 NAME = tic_tac_toe
 
 SRCS = main.c \
-	Functions/grille_modif.c \
+	Functions/tic-tac-toe.c \
 	Functions/string_modif.c \
 	Functions/user_modif.c \
-	Functions/verification.c
+	Functions/verification.c \
+	Functions/bot.c
 
 all: $(NAME)
 

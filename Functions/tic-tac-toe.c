@@ -29,3 +29,21 @@ char ** grille_creation() {
   
     return grille;
 }
+
+void grille_cleaning(char ** grille) {
+    for (int x = 0; x < 3; x++) {
+        grille[x] = '\0';
+    }
+}
+
+void win_message(int win, int player, int bot) {
+    if (win == player) {
+        printf("Bravo joueur !\n");
+    } else if (win == bot) {
+        printf("Bravo bot !\n");
+    } else if (win == 3) {
+        printf("Egalite !\n");
+    } else {
+        printf("Petit probleme technique !\n");
+    }
+}
